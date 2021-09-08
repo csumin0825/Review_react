@@ -1,0 +1,7 @@
+week2
+-> 새로운 react 프로젝트 생성
+
+(명령 프롬포트)
+- cd <해당 프로젝트 폴더>
+- npm init react-app <프로젝트 이름>
+- npm start
