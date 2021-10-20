@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    ** ? 연산자 **
+    ** 반복문 **
 </head>
 <body>
     <script>
-        let age = prompt('나이를 입력해주세요.', 18);
-
-        let message = (age < 3) ? '아기야 안녕?' :
-            (age < 18) ? '안녕?':
-            (age < 100) ? '환영합니다!':
-            '나이가 아주 많으시거나, 나이가 아닌 값을 입력하셨군요!';
-
-        alert(message);
+        let i = 0;
+        do{
+            alert(i);
+            i++;
+        } while (i<3);
     </script>
     
 </body>
