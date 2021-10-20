@@ -2,9 +2,25 @@
 <html lang="en">
 <head>
     <title>Week4 Review</title>
+    ** 함수 표현식 **
 </head>
 <body>
+    <script>
+        //함수 표현식은 세미콜론이 필요하다.
+        function sayHi(){
+            alert("Hello");
+        }
+        sayHi();
 
+        let func = sayHi;
+        func();
+
+        let sayBye = function(){
+            alert("Bye");
+        }
+        sayBye();
+
+    </script>
     
 </body>
 </html>
