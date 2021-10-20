@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    ** 반복문 **
+    ** break 레이블 **
 </head>
 <body>
     <script>
-        for(let i = 0; i<4; i++){
-            alert(i);
+        outer : for(let i = 0;  i<3; i++){
+            for (let j = 0; j < 3; j++){
+                let input = prompt(`(${i}, ${j})의 값`, '');
+                //사용자가 아무것도 입력하지 않거나 Cancel 버튼을 입력
+                if(!input) break outer;
+
+                //입력받은 값을 가지고 무언가를 함
+            }
         }
+        alert('완료!');
     </script>
     
 </body>
