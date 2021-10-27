@@ -2,21 +2,22 @@
 <html lang="en">
 <head>
     <title>IoT Week4 Review</title>
-    ** 콜백 함수 **
+    ** 객체 대괄호 표기법2 **
 </head>
 <body>
     <script>
-       function ask(question, yes, no){
-           if(confirm(question)) yes()
-           else no();
-       }
+       let fruit = prompt("어떤 과일을 구매하시겠습니까?", "apple");
 
-       ask(
-           "동의하십니까?",
-           function() {alert("동의하셨습니다.")},
-           function() {alert("취소 버튼을 누르셨습니다.");}
-       );
+       let bag = {
+           [fruit] : 5,
+       };
 
+       alert(bag.apple);
+
+       let furit_ = 'apple';
+       let bag_ = {
+           [furit + 'Computers']: 5
+       };
     </script>
     
 </body>
