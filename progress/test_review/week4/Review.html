@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Week4 Review</title>
-    ** 함수 표현식 **
+    <title>IoT Week4 Review</title>
+    ** 콜백 함수 **
 </head>
 <body>
     <script>
-        //함수 표현식은 세미콜론이 필요하다.
-        function sayHi(){
-            alert("Hello");
-        }
-        sayHi();
+       function ask(question, yes, no){
+           if(confirm(question)) yes()
+           else no();
+       }
 
-        let func = sayHi;
-        func();
-
-        let sayBye = function(){
-            alert("Bye");
-        }
-        sayBye();
+       ask(
+           "동의하십니까?",
+           function() {alert("동의하셨습니다.")},
+           function() {alert("취소 버튼을 누르셨습니다.");}
+       );
 
     </script>
     
